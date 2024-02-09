@@ -32,9 +32,9 @@ def occurance_scribble_text(pattern, text):
         text_count[text[i-pattern_len]] -= 1 #her is text_count is a dictionary that counts the occurrences of characters in a slice of text.
 
         if text_count[text[i-pattern_len]] == 0: #This line checks if the count of the character that was just decremented has become zero.
-            del text_count[text[i-pattern_len]] #If the count is zero, it means that character is no longer in the slice of text.
+            del text_count[text[i-pattern_len]] #If the count is zeroit means that character is no longer in the slice of text.
 
-        text_count[text[i]] += 1 #Here the  text[i] accesses the character that is at the current position i in the text.
+        text_count[text[i]] += 1 #Here we accesses the character that is at the current position i in the text.
 
 
 
@@ -42,15 +42,15 @@ def occurance_scribble_text(pattern, text):
 
 
 # here we take input for number of test cases
-T = int(input("Enter the number of test cases: "))
+case = int(input("Enter the number of test cases: "))
 
 # here we iterate througheach test cases
-for i in range(T):
+for i in range(case):
     
     # we take the input as pattern and text 
     pattern = input("Enter the pattern: ").strip()
     text = input("Enter the text: ").strip()
     
     # Output
-    # Call the function to check if any permutation of the pattern exists in the text and print the result
+    # now we Call the function
     print("Output:", occurance_scribble_text(pattern, text))
