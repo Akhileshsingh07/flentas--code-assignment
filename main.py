@@ -21,14 +21,6 @@ def occurance_scribble_text(pattern, text):
     pattern_count = Counter(pattern)
     text_count = Counter(text[:pattern_len])
     
-    # # If the counts of characters in the pattern and the initial slice of the text are equal, return "YES"
-    # if pattern_count == text_count:
-    #     return "YES"
-    
-    
-
-
-
     # here we run for loop for iterating through character of pattern and text.
     for i in range(pattern_len, text_len):
         
