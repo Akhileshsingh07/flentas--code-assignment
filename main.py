@@ -40,8 +40,8 @@ def occurance_scribble_text(pattern, text):
 
     return "YES" if text_count == pattern_count else "NO"
 
-# Input
-# Read the number of test cases
+
+# here we take input for number of test cases
 T = int(input("Enter the number of test cases: "))
 
 # here we iterate througheach test cases
