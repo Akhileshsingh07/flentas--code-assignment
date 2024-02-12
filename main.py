@@ -1,8 +1,5 @@
 # firstly we import Counter from collections (module)
 from collections import Counter
-
-
-
 # here we Define the functions to check if any re-aarangment of the pattern exists in the text
 def occurance_scribble_text(pattern, text):
     # here we Calculate the lengths of the pattern and the text.
